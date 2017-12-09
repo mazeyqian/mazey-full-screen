@@ -18,6 +18,10 @@ document.getElementById('request').addEventListener('click', () => {
 document.getElementById('exit').addEventListener('click', () => {
     fullscreen.exit();
 });
+
+(function () {
+    document.documentElement.webkitRequestFullscreen();
+})();
 </script>
 </body>
 </html>
