@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="example">
+    <img src="html5.png">
+    <button type="button" id="requestFullscreen">requestFullscreen</button>
+    <button type="button" id="exitFullscreen">exitFullscreen</button>
+    <button type="button" id="fullscreenElement">fullscreenElement</button>
+    <button type="button" id="fullscreenEnabled">fullscreenEnabled</button>
+</div>
+
+<script>
+
+</script>
+<script>
+// 全屏
+document.getElementById('requestFullscreen').addEventListener('click', () => {
+    document.querySelector('#example').webkitRequestFullscreen();
+});
+
+// 退出全屏
+document.getElementById('exitFullscreen').addEventListener('click', () => {
+    document.webkitExitFullscreen();
+});
+
+// 显示全屏元素
+document.getElementById('fullscreenElement').addEventListener('click', () => {
+    console.log(document.webkitFullscreenElement);
+});
+
+// 全屏是否可用
+document.getElementById('fullscreenEnabled').addEventListener('click', () => {
+    console.log(document.webkitFullscreenEnabled);
+});
+</script>
+</body>
+</html>

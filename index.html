@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="h1">html5 - 全屏</h1>
+<button id="request">请求全屏</button>
+<button id="exit">退出全屏</button>
+<script src="mazey-full-screen.js"></script>
+<script>
+// 请求全屏
+document.getElementById('request').addEventListener('click', () => {
+    fullscreen.request();
+});
+// 退出全屏
+document.getElementById('exit').addEventListener('click', () => {
+    fullscreen.exit();
+});
+</script>
+</body>
+</html>
